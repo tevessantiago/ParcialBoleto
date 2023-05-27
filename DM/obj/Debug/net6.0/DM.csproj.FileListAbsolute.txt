@@ -1,0 +1,12 @@
+C:\Users\teves\source\repos\ParcialBoleto\DM\bin\Debug\net6.0\DM.deps.json
+C:\Users\teves\source\repos\ParcialBoleto\DM\bin\Debug\net6.0\DM.dll
+C:\Users\teves\source\repos\ParcialBoleto\DM\bin\Debug\net6.0\DM.pdb
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\DM.csproj.AssemblyReference.cache
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\DM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\DM.AssemblyInfoInputs.cache
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\DM.AssemblyInfo.cs
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\DM.csproj.CoreCompileInputs.cache
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\DM.dll
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\refint\DM.dll
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\DM.pdb
+C:\Users\teves\source\repos\ParcialBoleto\DM\obj\Debug\net6.0\ref\DM.dll
