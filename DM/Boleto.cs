@@ -2,14 +2,14 @@
 {
     public abstract class Boleto
     {
-        public int Numero { get; set; }// Cambiar int a id unico
+        public Guid Id { get; set; }
+        public int Numero { get; set; }
         public DateTime FechaSalida { get; set; }
         public int TiempoEnDias { get; set; }
-        public decimal CostoEmbarque { get; set; } //double
+        public double CostoEmbarque { get; set; }
 
-        //Boleto(int numeroBoleto)
-
-        public abstract decimal CostoBoleto(); //double
-        public abstract DateTime CalcularRegreso();
+        public TipoBoleto TipoBoleto { get; set; }
+        //public abstract double CostoBoleto(); //A la BLL
+        //public abstract DateTime CalcularRegreso(); // A la BLL
     }
 }
