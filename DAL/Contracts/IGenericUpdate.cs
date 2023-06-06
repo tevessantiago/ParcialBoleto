@@ -8,7 +8,7 @@ namespace DAL.Contracts
 {
     public interface IGenericUpdate<T>
     {
-        void Update(int id, T entity);
+        void Update(Guid id, T entity);
     }
 
 }

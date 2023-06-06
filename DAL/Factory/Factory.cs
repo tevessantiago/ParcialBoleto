@@ -40,6 +40,16 @@ namespace DAL.Factory
 				default: return new Repositories.Memory.BoletoRepository();
             }
         }
+
+		public IGenericRepository<Venta> GetVentaRepository()
+		{
+            switch (backend)
+            {
+                case "SqlServer": return new Repositories.SqlServer.VentaRepository();
+                case "Memory": return new Repositories.Memory.VentaRepository();
+                default: return new Repositories.Memory.VentaRepository();
+            }
+        }
     }
 
 }

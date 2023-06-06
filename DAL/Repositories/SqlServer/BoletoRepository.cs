@@ -42,7 +42,7 @@ namespace DAL.Repositories.SqlServer
         #endregion
 
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
             throw new NotImplementedException();
         }
@@ -52,7 +52,7 @@ namespace DAL.Repositories.SqlServer
             throw new NotImplementedException();
         }
 
-        public Boleto GetOne(int id)
+        public Boleto GetOne(Guid id)
         {
             Boleto boletos = default;
 
@@ -79,7 +79,7 @@ namespace DAL.Repositories.SqlServer
             throw new NotImplementedException();
         }
 
-        public void Update(int id, Boleto entity)
+        public void Update(Guid id, Boleto entity)
         {
             throw new NotImplementedException();
         }

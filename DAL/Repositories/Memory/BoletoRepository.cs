@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories.Memory
 {
-    internal class BoletoRepository : IGenericRepository<Boleto>
+    public class BoletoRepository : IGenericRepository<Boleto>
     {
         List<Boleto> boletos = new List<Boleto>();
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
-            boletos.RemoveAll(boleto => boleto.Numero == id);
+            boletos.RemoveAll(boleto => boleto.IdBoleto == id);
         }
 
         public IEnumerable<Boleto> GetAll()
@@ -22,9 +22,9 @@ namespace DAL.Repositories.Memory
             return boletos;
         }
 
-        public Boleto GetOne(int id)
+        public Boleto GetOne(Guid id)
         {
-            return boletos.FirstOrDefault(o => o.Numero == id);
+            return boletos.FirstOrDefault(boleto => boleto.IdBoleto == id);
         }
 
         public void Insert(Boleto entity)
@@ -33,9 +33,9 @@ namespace DAL.Repositories.Memory
             boletos.Add(entity);
         }
 
-        public void Update(int id, Boleto entity)
+        public void Update(Guid id, Boleto entity)
         {
-            int index = boletos.FindIndex(boleto => boleto.Numero == id);
+            int index = boletos.FindIndex(boleto => boleto.IdBoleto == id);
             if(index == -1)
             {
                 boletos[index] = entity;

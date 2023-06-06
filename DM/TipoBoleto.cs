@@ -8,6 +8,6 @@ namespace DM
 {
     public enum TipoBoleto
     {
-        Todos, Turista, Ejecutivo
+        Turista, Ejecutivo, Todos
     }
 }

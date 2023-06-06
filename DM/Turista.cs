@@ -14,22 +14,5 @@ namespace DM
             TipoBoleto = TipoBoleto.Turista;
         }
 
-        /*public Turista(int numero, DateTime fechaSalida, int tiempoEnDias, double costoEmbarque)
-        {
-            Numero = numero;
-            FechaSalida = fechaSalida;
-            TiempoEnDias = tiempoEnDias;
-            CostoEmbarque = costoEmbarque;
-        }
-
-        public override double CostoBoleto()
-        {
-            return 9950 + 8400 + CostoEmbarque;
-        }*/
-
-        /*public override DateTime CalcularRegreso()
-        {
-            return FechaSalida.AddDays(TiempoEnDias);
-        }*/
     }
 }

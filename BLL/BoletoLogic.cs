@@ -52,7 +52,7 @@ namespace BLL
             }
         }
 
-        public void Actualizar(int id, Boleto unBoleto) 
+        public void Actualizar(Guid id, Boleto unBoleto) 
         {
             repositoryBoleto.Update(id, unBoleto);
         }
@@ -62,12 +62,12 @@ namespace BLL
             repositoryBoleto.Insert(unBoleto);
         }
 
-        public Boleto Buscar(int numeroBoleto)
+        public Boleto Buscar(Guid numeroBoleto)
         {            
             return repositoryBoleto.GetOne(numeroBoleto);            
         }
 
-        public void Eliminar(int numeroBoleto)
+        public void Eliminar(Guid numeroBoleto)
         {
             repositoryBoleto.Delete(numeroBoleto);
         }

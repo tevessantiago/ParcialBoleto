@@ -8,7 +8,7 @@ namespace DAL.Contracts
 {
     public interface IGenericGetOne<T>
     {
-        T GetOne(int id);
+        T GetOne(Guid id);
     }
 
 }

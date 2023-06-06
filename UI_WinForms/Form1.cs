@@ -5,13 +5,13 @@ namespace UI_WinForms
 {
     public partial class Form1 : Form
     {
-        //List<Ejecutivo> ejecutivos = new List<Ejecutivo>();
-        //List<Turista> turistas = new List<Turista>();
         List<Boleto> boletosAgregados = new List<Boleto>();
         BoletoLogic boletoLogic = new BoletoLogic();
+        VentaLogic ventaLogic; 
         public Form1()
         {
             InitializeComponent();
+            ventaLogic = new VentaLogic(boletoLogic); //No me deja hacerlo directo en la declaración.
             cmbTipo.DataSource = Enum.GetValues(typeof(TipoBoleto));
             cmbTipo.DisplayMember = "ToString";
         }
@@ -98,7 +98,7 @@ namespace UI_WinForms
                 {
                     throw new Exception("Para vender, primero debe agregar boletos.");
                 }
-                boletoLogic.AgregarMultiplesBoletos(boletosAgregados);
+                ventaLogic.VenderBoletos(boletosAgregados);
             }
             catch(Exception ex)
             {

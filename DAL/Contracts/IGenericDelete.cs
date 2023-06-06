@@ -8,7 +8,7 @@ namespace DAL.Contracts
 {
     public interface IGenericDelete<T>
     {
-        void Delete(int id);
+        void Delete(Guid id);
     }
 
 }

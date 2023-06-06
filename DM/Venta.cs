@@ -8,8 +8,8 @@ namespace DM
 {
     public class Venta
     {
-        DateTime FechaVenta { get; set; }
-        List<Boleto> boletosVendidos { get; set; }
-        Guid IdVenta { get; set; }
+        public DateTime FechaVenta { get; set; }
+        public List<Boleto> boletosVendidos { get; set; }
+        public Guid IdVenta { get; set; }
     }
 }
