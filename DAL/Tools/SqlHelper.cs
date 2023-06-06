@@ -11,7 +11,7 @@ namespace DAL.Tools
 
         static SqlHelper()
         {
-            conString = ConfigurationManager.ConnectionStrings["TC1Connection"].ConnectionString;
+            conString = ConfigurationManager.ConnectionStrings["BoletosConn"].ConnectionString;
         }
         public static Int32 ExecuteNonQuery(String commandText,
             CommandType commandType, params SqlParameter[] parameters)

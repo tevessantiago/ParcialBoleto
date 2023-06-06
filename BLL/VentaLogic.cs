@@ -28,6 +28,7 @@ namespace BLL
         public void VenderBoletos(List<Boleto> boletos)
         {
             Venta venta = new Venta();
+            venta.FechaVenta = DateTime.Now;
             venta.IdVenta = Guid.NewGuid();
             foreach(Boleto boleto in boletos)
             {
