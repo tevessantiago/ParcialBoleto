@@ -29,6 +29,7 @@ namespace DAL.Repositories.Memory
 
         public void Insert(Boleto entity)
         {
+            entity.Numero = boletos.Count() + 1; 
             boletos.Add(entity);
         }
 
